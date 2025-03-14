@@ -1,0 +1,50 @@
+name: 🔧 Pull request
+description: Create a pull request to help us improve
+
+body:
+
+  - id: existing-pull-request
+    type: checkboxes
+    attributes:
+      label: Existing pull request
+      options:
+        - label: I've already checked for an existing pull request, and I'm not able to find one.
+
+  - id: describe-pull-request
+    type: textarea
+    attributes:
+      label: Describe the pull request
+      description: |
+        Please include a summary of the changes and the related issue.
+        Please also include relevant motivation and context.
+        List any dependencies that are required for this change.
+    validations:
+      required: true
+
+  - id: type-of-change
+    type: checkboxes
+    attributes:
+      label: Type of change
+      description: |
+        Please select the type of change that best describes this pull request.
+        If you're not sure, please select 'Other'.
+      options:
+        - label: Bug fix
+        - label: New feature
+        - label: Documentation update
+        - label: Style change
+        - label: Refactor
+        - label: Performance improvement
+        - label: Test update
+        - label: Build update
+        - label: CI/CD update
+        - label: Other
+    validations:
+      required: true
+
+  - id: breaking-changes
+    type: checkboxes
+    attributes:
+      label: Breaking changes
+      options:
+        - label: This pull request includes breaking changes.
