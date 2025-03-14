@@ -1,0 +1,12 @@
+branch_whitelist = [
+    "main",
+]
+
+[git_hooks.commit-msg]
+script = """#!/bin/bash
+set -euo pipefail
+IFS=$'\\n\\t'
+
+echo "[Check current commit message]"
+cog verify --file $1
+"""
