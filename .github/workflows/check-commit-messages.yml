@@ -1,18 +1,6 @@
-name: Check commit messages
-
 on:
   - push
 
 jobs:
   check_commit_messages:
-    name: Check commit messages
-    runs-on: ubuntu-latest
-    steps:
-
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Conventional commits check
-        uses: cocogitto/cocogitto-action@v3
+    uses: ./.github/workflows/_check_commit_messages.yml

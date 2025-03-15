@@ -1,0 +1,23 @@
+on:
+  - workflow_call
+
+name: Check commit messages
+
+permissions:
+  contents: read
+
+jobs:
+  check_commit_messages:
+    name: Check commit messages
+    runs-on: ubuntu-latest
+    steps:
+
+      - id: checkout_code
+        name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - id: check_conventional_commits
+        name: Check conventional commits
+        uses: cocogitto/cocogitto-action@v3
