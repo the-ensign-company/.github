@@ -1,3 +1,5 @@
+name: Check commit messages
+
 on:
   - push
 

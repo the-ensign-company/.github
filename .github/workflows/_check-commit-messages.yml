@@ -1,8 +1,6 @@
 on:
   - workflow_call
 
-name: Check commit messages
-
 permissions:
   contents: read
 
