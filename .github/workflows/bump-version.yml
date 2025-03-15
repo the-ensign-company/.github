@@ -5,7 +5,7 @@ on:
 
 jobs:
   bump_version:
-    uses: ./.github/workflows/_bump-version.yml
+    uses: the-ensign-company/.github/.github/workflows/_bump-version.yml@main
     secrets:
       GPG_KEY: ${{ secrets.GPG_KEY }}
       GPG_KEY_PASSPHRASE: ${{ secrets.GPG_KEY_PASSPHRASE }}
