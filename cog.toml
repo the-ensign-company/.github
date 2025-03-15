@@ -8,5 +8,5 @@ set -euo pipefail
 IFS=$'\\n\\t'
 
 echo "[Check current commit message]"
-cog verify --file $1
+cog --quiet verify --file $1
 """
