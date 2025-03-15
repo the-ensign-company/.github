@@ -5,4 +5,4 @@ on:
 
 jobs:
   check_commit_messages:
-    uses: the-ensign-company/.github/.github/workflows/_check-commit-messages.yml@main
+    uses: the-ensign-company/.github/shared-workflows/check-commit-messages.yml@main
