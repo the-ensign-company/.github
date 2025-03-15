@@ -7,6 +7,8 @@ script = """#!/bin/bash
 set -euo pipefail
 IFS=$'\\n\\t'
 
-echo "[Check current commit message]"
+echo "Checking current commit message"
+
 cog --quiet verify --file $1
+
 """
