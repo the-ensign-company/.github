@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
 jobs:
   bump_version:
     uses: the-ensign-company/.github/.github/workflows/.bump-version.yml@main
