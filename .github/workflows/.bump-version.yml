@@ -2,10 +2,8 @@ on:
   workflow_call:
     secrets:
       GPG_KEY:
-        type: string
         required: true
       GPG_KEY_PASSPHRASE:
-        type: string
         required: true
 
 permissions:
